@@ -46,10 +46,10 @@ workflows:
           filters:
             branches:
               only: main
-        - lerna-version:
-            requires:
-              - setup
-            filters:
-              branches:
-                only: main
+      - lerna-version:
+          requires:
+            - setup
+          filters:
+            branches:
+              only: main
 
