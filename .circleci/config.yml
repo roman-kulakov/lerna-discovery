@@ -33,9 +33,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-      - add_ssh_keys:
-          fingerprints:
-            - "e7:3d:0e:5f:de:a8:59:a0:1b:6d:d1:64:40:67:d4:39"
+      - checkout
       - run:
           name: Lerna version
           command: npx lerna version
