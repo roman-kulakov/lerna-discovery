@@ -35,6 +35,11 @@ jobs:
           at: ~/repo
       - checkout
       - run:
+          name: Set name
+          command: |
+            git config --global user.email "roman.k@openweb.com"
+            git config --global user.name "roman-kulakov"
+      - run:
           name: Lerna version
           command: npx lerna version --yes
 
