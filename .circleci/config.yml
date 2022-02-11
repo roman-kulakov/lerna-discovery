@@ -41,7 +41,7 @@ jobs:
             git config --global user.name "roman-kulakov"
       - run:
           name: Lerna version
-          command: npx lerna version --yes
+          command: npx lerna publish --yes
 
 workflows:
   version: 2.1
