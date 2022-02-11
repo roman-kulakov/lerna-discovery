@@ -33,7 +33,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-#      - checkout
+      - checkout
       - run:
           name: Lerna version
           command: npx lerna version --yes
