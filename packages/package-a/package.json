@@ -1,6 +1,6 @@
 {
   "name": "@r3mk5v/package-a",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "deaBrgil <deanabargil@gmail.com>",
   "homepage": "",
@@ -30,7 +30,7 @@
     "react-dom": ">=16"
   },
   "dependencies": {
-    "@r3mk5v/package-b": "^1.1.0",
+    "@r3mk5v/package-b": "^1.1.1",
     "cross-env": "^7.0.3",
     "jest-axe": "^5.0.1"
   }
