@@ -44,7 +44,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
       - run:
           name: Lerna version
-          command: npx lerna publish --yes
+          command: npx lerna publish --yes --no-verify-access
 
 workflows:
   version: 2.1
