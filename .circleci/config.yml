@@ -40,6 +40,9 @@ jobs:
             git config --global user.email "roman.k@openweb.com"
             git config --global user.name "roman-kulakov"
       - run:
+          name: Set NPM Token
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+      - run:
           name: Lerna version
           command: npx lerna publish --yes
 
