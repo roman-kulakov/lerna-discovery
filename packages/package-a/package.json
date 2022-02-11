@@ -1,0 +1,37 @@
+{
+  "name": "@r3mk5v/package-a",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "deaBrgil <deanabargil@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "build": "yarn --cwd .. rollup -c --scope @r3mk5v/package-a",
+    "test": "jest --passWithNoTests",
+    "test:watch": "yarn test --watch",
+    "lint": "eslint -c .eslintrc.js --no-error-on-unmatched-pattern ./",
+    "lint:fix": "eslint -c .eslintrc.js --fix --quiet --no-error-on-unmatched-pattern ./",
+    "prepare": "yarn build"
+  },
+  "main": "dist/package-a.cjs.js",
+  "umd": "dist/package-a.umd.js",
+  "module": "dist/package-a.esm.js",
+  "types": "dist/packages/package-a/src/index.d.ts",
+  "files": [
+    "../package-a/src",
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "dependencies": {
+    "@r3mk5v/package-b": "^1.0.0",
+    "cross-env": "^7.0.3",
+    "jest-axe": "^5.0.1"
+  }
+}

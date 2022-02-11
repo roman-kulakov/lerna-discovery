@@ -1,0 +1,35 @@
+{
+  "name": "@r3mk5v/package-b",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "deaBrgil <deanabargil@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "build": "yarn --cwd .. rollup -c --scope @r3mk5v/package-b",
+    "test": "jest --passWithNoTests",
+    "test:watch": "yarn test --watch",
+    "lint": "eslint -c .eslintrc.js --no-error-on-unmatched-pattern ./",
+    "lint:fix": "eslint -c .eslintrc.js --fix --quiet --no-error-on-unmatched-pattern ./",
+    "prepare": "yarn build"
+  },
+  "main": "dist/package-b.cjs.js",
+  "umd": "dist/package-b.umd.js",
+  "module": "dist/package-b.esm.js",
+  "types": "dist/packages/package-b/src/index.d.ts",
+  "files": [
+    "../package-b/src",
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
