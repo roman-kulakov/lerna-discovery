@@ -33,10 +33,10 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-      - checkout
+#      - checkout
       - run:
           name: Lerna version
-          command: npx lerna version
+          command: npx lerna varsion --yes
 
 workflows:
   version: 2.1
