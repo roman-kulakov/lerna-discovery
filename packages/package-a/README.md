@@ -1,6 +1,6 @@
 # `package-a`
 
-> TODO: description df
+> TODO: description
 
 ## Usage
 
